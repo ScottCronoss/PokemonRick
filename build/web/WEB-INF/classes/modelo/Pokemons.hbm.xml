@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 6/06/2021 08:16:50 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.Pokemons" table="pokemons" catalog="pokemon" optimistic-lock="version">
+        <id name="idpokemonrick" type="java.lang.Integer">
+            <column name="idpokemonrick" />
+            <generator class="identity" />
+        </id>
+        <property name="nombrerick" type="string">
+            <column name="nombrerick" length="50" not-null="true" />
+        </property>
+        <property name="tiporick" type="string">
+            <column name="tiporick" length="50" not-null="true" />
+        </property>
+        <property name="evolucionesrick" type="int">
+            <column name="evolucionesrick" not-null="true" />
+        </property>
+        <property name="habitatrick" type="string">
+            <column name="habitatrick" length="50" not-null="true" />
+        </property>
+        <property name="alturarick" type="byte">
+            <column name="alturarick" not-null="true" />
+        </property>
+        <property name="debilidadrick" type="string">
+            <column name="debilidadrick" length="50" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
